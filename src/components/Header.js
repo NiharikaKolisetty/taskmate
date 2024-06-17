@@ -1,10 +1,20 @@
-// import "./headerSec.css";
+// import "./headerCss.css";
 // import Logo from "../assets/logo.png";
-// export default function Header(){
-//     return(
-//         <>
-//         <img className="logo" src={Logo} alt=""/>
-//         <h1 className="Header">This is Header Section.</h1>
-//         </>
-//     );
-// }
+// const Header = () => {
+//   return (
+//     <>
+//       <div className="header">
+//         <img alt=" " src={Logo}></img>
+//         <h1>This is Header section</h1>
+//         <div className="links">
+//           <a href="/">Link</a>
+//           <a href="/">Link</a>
+//           <a href="/">Link</a>
+//           <a href="/">Link</a>
+//         </div>
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Header;

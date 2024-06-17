@@ -1,8 +1,9 @@
-// import "./footerSec.css";
-// export default function Footer(){
+// import "./footerCss.css";
+// export default function Footer() {
 //     return(
 //         <>
-//         <h1 className="Footer">This is Footer Section.</h1>
+//         <h2>This is footer section</h2>
 //         </>
 //     )
 // }
+

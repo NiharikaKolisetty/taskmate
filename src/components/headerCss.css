@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 900px 10px 10px; /* Adjust padding as needed */
+    
+}
+img{
+    height: 30px;
+    margin-right: 10px;
+}
+.links {
+    display: flex; /* Use flexbox to align items */
+    justify-content: flex-end; /* Align items to the end of the container */
+}
+
+.links a{
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0px 100px 0px 200px;
+}
