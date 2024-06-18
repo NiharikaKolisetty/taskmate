@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TaskCard from "./TaskCard";
+import BoxCard from "./BoxCard";
 
 const TaskList = (props) => {
   const [tasks, setTasks] = useState([
@@ -27,6 +28,16 @@ const TaskList = (props) => {
           ))}
         </ul>
       </div>
+
+      <BoxCard result="success">
+        <p className="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, facere!</p>
+        <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci in incidunt qui cupiditate, saepe et.</p>
+      </BoxCard>
+
+      <BoxCard result="warning">
+        <p className="title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, facere!</p>
+        <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci in incidunt qui cupiditate, saepe et.</p>
+      </BoxCard>
     </div>
   );
 };

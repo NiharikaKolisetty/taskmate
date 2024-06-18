@@ -91,3 +91,58 @@
     box-shadow: rgb(232, 25, 25) 5px 5px 5px;
   }
   
+
+  .box-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+  }
+  
+  /* Success result styles */
+  .box-card.success {
+    background-color: green;
+  }
+  
+  /* Warning result styles */
+  .box-card.warning {
+    background-color: orange;
+  }
+  
+  /* Error result styles */
+  .box-card.error {
+    background-color: red;
+  }
+  
+  /* Title styles */
+  .box-card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Description styles */
+  .box-card .description {
+    font-size: 14px;
+  }
+  
+  /* Hidden class to hide the component */
+  .hidden {
+    display: none;
+  }
+
+  .toggle-button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0056b3;
+  }
