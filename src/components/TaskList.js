@@ -1,4 +1,6 @@
 import { useState } from "react";
+import TaskCard from "./TaskCard";
+
 const TaskList = (props) => {
   const [tasks, setTasks] = useState([
     { id: 1, Name: "Mahi", completed: true },
@@ -12,25 +14,17 @@ const TaskList = (props) => {
   }
 
   const [show, setShow] = useState(true);
+
   return (
     <div>
-      <h1>useState : Array State Value Example</h1>
+      <h1>useState: Array State Value Example</h1>
       <div className="box1">
         <h2>Tasks List {props.title} {props.subTitle}</h2>
         <button onClick={() => setShow(!show)}>HIDE</button>
         <ul>
-          {show &&
-            tasks.map((task) => (
-              <li
-                key={task.id}
-                className={task.completed ? "completed" : "incomplete"}
-              >
-                <span>
-                  {task.id}-{task.Name}
-                </span>
-                <button onClick={() => handleDel(task.id)}>Delete</button>
-              </li>
-            ))}
+          {show && tasks.map((task) => (
+            <TaskCard key={task.id} task={task} handleDel={handleDel} />
+          ))}
         </ul>
       </div>
     </div>
