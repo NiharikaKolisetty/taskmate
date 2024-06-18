@@ -1,23 +1,27 @@
-*{
-    padding: 0;
+/* General reset and box-sizing */
+* {
     margin: 0;
-}
-/* p{
-    background-color: brown;
-    color: beige;
-} */
-h1{
-    text-align: center;
-    margin-top: 10px;
-    color: brown;
-}
-body{
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-.box{
+  }
+  
+  /* Heading styles */
+  h1 {
+    text-align: center;
+    margin-top: 10px;
+    color: brown;
+  }
+  
+  /* Box styles */
+  .box {
     padding: 50px;
     margin: 50px;
     height: 200px;
@@ -28,13 +32,14 @@ body{
     color: rgb(207, 83, 87);
     text-align: center;
     box-shadow: 3px 3px;
-} 
-
-.box1{
+  }
+  
+  /* Box1 styles */
+  .box1 {
     padding: 50px;
     margin: 50px;
-    height: 430px;
-    width: 350px;
+    height: 480px;
+    width: 450px;
     margin-top: 10px;
     border: 2px solid rgb(224, 107, 107);
     border-radius: 10px;
@@ -42,18 +47,18 @@ body{
     color: rgb(207, 83, 87);
     text-align: center;
     box-shadow: 3px 3px;
-    
-} 
-
-.box1 li{
+  }
+  
+  /* List item styles within Box1 */
+  .box1 li {
     list-style-type: none;
     text-align: left;
     align-items: center;
     justify-content: center;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
     height: 70px;
     width: 300px;
-    margin: 7px 5px 7px 5px;
+    margin: 7px 5px;
     border: 2px solid rgb(224, 107, 107);
     border-radius: 10px;
     background-color: antiquewhite;
@@ -61,35 +66,28 @@ body{
     box-shadow: 3px 3px;
     display: flex;
     justify-content: space-between;
-}
-
-.box button{
+  }
+  
+  /* Button styles */
+  .box button, .box1 button {
     padding: 10px 20px;
     background-color: burlywood;
     border: none;
     border-radius: 10px;
     margin: 30px 10px 10px 20px;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-}
-
-.box button:hover{
+  }
+  
+  .box button:hover, .box1 button:hover {
     color: rgb(232, 25, 25);
     background-color: coral;
-    
-}
-
-.box1 button{
-    padding: 10px 20px;
-    background-color: burlywood;
-    border: none;
-    border-radius: 10px;
-    margin: 30px 10px 10px 20px;
-}
-
-.box1 button:hover{
-    color: rgb(232, 25, 25);
-    background-color: coral;
-    
-}
+  }
+  
+  /* Task completion styles */
+  .box1 li.completed {
+    box-shadow: rgb(2, 108, 30) 5px 5px 5px;
+  }
+  
+  .box1 li.incomplete {
+    box-shadow: rgb(232, 25, 25) 5px 5px 5px;
+  }
+  

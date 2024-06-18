@@ -18,3 +18,21 @@
 // };
 
 // export default Header;
+
+// mutliple components & props 
+import Logo from "../assets/logo.png";
+import "./headerCss.css";
+const Header = () => {
+  return (
+    <div>
+        <div className="header-nav "> 
+        <img src={Logo} alt=""/>
+        <a href="/">Home</a>
+        </div>
+     
+    </div>
+  )
+}
+
+export default Header
+
