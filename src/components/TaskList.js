@@ -21,7 +21,7 @@ const TaskList = (props) => {
       <h1>useState: Array State Value Example</h1>
       <div className="box1">
         <h2>Tasks List {props.title} {props.subTitle}</h2>
-        <button onClick={() => setShow(!show)}>HIDE</button>
+        <button onClick={() => setShow(!show)}>{show ? "HIDE" : "SHOW"}</button>
         <ul>
           {show && tasks.map((task) => (
             <TaskCard key={task.id} task={task} handleDel={handleDel} />

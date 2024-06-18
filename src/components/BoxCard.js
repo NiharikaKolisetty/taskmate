@@ -1,14 +1,17 @@
-import { useState } from "react"
-const BoxCard = ({result,children}) => {
-    const[show, setShow] = useState(true);
+import { useState } from "react";
+
+const BoxCard = ({ result, children }) => {
+  const [show, setShow] = useState(true);
   return (
-    <div className={show? " ": "hidden"}>
+    <div className={show ? "" : "hidden"}>
       <div className={`box-card ${result}`}>
         {children}
       </div>
-      <button className="toggle-button" onClick={()=> setShow(!show)}>Hide</button>
+      <button className="toggle-button" onClick={() => setShow(!show)}>
+        {show ? "Hide" : "Show"}
+      </button>
     </div>
-  )
+  );
 }
 
-export default BoxCard
+export default BoxCard;

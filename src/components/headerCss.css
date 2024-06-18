@@ -1,26 +1,27 @@
 /* Navbar container */
 .header-nav {
-    display: flex;
-    align-items: center;
-    background-color: black;
-    padding: 10px 20px;
-  }
-  
-  /* Logo image */
-  .header-nav img {
-    height: 30px;
-    margin-right: 20px;
-  }
-  
-  /* Navbar links */
-  .header-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-  }
-  
-  /* Additional styles for better appearance */
-  .header-nav a:hover {
-    color: #f0a500;
-  }
-  
+  display: flex;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Ensure navbar spans full width */
+}
+
+/* Logo image */
+.header-nav img {
+  height: 30px;
+  margin-right: 10px; /* Adjust spacing between logo and link */
+}
+
+/* Navbar links */
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #f0a500;
+}

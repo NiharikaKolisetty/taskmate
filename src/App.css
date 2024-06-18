@@ -1,148 +1,123 @@
 /* General reset and box-sizing */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  /* Heading styles */
-  h1 {
-    text-align: center;
-    margin-top: 10px;
-    color: brown;
-  }
-  
-  /* Box styles */
-  .box {
-    padding: 50px;
-    margin: 50px;
-    height: 200px;
-    width: 200px;
-    border: 2px solid rgb(224, 107, 107);
-    border-radius: 10px;
-    background-color: antiquewhite;
-    color: rgb(207, 83, 87);
-    text-align: center;
-    box-shadow: 3px 3px;
-  }
-  
-  /* Box1 styles */
-  .box1 {
-    padding: 50px;
-    margin: 50px;
-    height: 480px;
-    width: 450px;
-    margin-top: 10px;
-    border: 2px solid rgb(224, 107, 107);
-    border-radius: 10px;
-    background-color: antiquewhite;
-    color: rgb(207, 83, 87);
-    text-align: center;
-    box-shadow: 3px 3px;
-  }
-  
-  /* List item styles within Box1 */
-  .box1 li {
-    list-style-type: none;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
-    padding: 5px;
-    height: 70px;
-    width: 300px;
-    margin: 7px 5px;
-    border: 2px solid rgb(224, 107, 107);
-    border-radius: 10px;
-    background-color: antiquewhite;
-    color: rgb(207, 83, 87);
-    box-shadow: 3px 3px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  /* Button styles */
-  .box button, .box1 button {
-    padding: 10px 20px;
-    background-color: burlywood;
-    border: none;
-    border-radius: 10px;
-    margin: 30px 10px 10px 20px;
-  }
-  
-  .box button:hover, .box1 button:hover {
-    color: rgb(232, 25, 25);
-    background-color: coral;
-  }
-  
-  /* Task completion styles */
-  .box1 li.completed {
-    box-shadow: rgb(2, 108, 30) 5px 5px 5px;
-  }
-  
-  .box1 li.incomplete {
-    box-shadow: rgb(232, 25, 25) 5px 5px 5px;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .box-card {
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px;
-    color: white;
-  }
-  
-  /* Success result styles */
-  .box-card.success {
-    background-color: green;
-  }
-  
-  /* Warning result styles */
-  .box-card.warning {
-    background-color: orange;
-  }
-  
-  /* Error result styles */
-  .box-card.error {
-    background-color: red;
-  }
-  
-  /* Title styles */
-  .box-card .title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Description styles */
-  .box-card .description {
-    font-size: 14px;
-  }
-  
-  /* Hidden class to hide the component */
-  .hidden {
-    display: none;
-  }
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
 
-  .toggle-button {
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    display: block;
-  }
-  
-  .toggle-button:hover {
-    background-color: #0056b3;
-  }
+/* Heading styles */
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  color: #5a5a5a;
+}
+
+/* Box styles */
+.box {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #e06b6b;
+  border-radius: 10px;
+  background-color: #fff5e6;
+  color: #cf5357;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #e06b6b;
+  border-radius: 10px;
+  background-color: #fff5e6;
+  color: #cf5357;
+  text-align: center;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* List item styles within Box1 */
+.box1 li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #e06b6b;
+  border-radius: 10px;
+  background-color: #fff5e6;
+  color: #cf5357;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1 li.completed {
+  border-color: #026c1e;
+  box-shadow: 5px 5px 8px rgba(2, 108, 30, 0.4);
+}
+
+.box1 li.incomplete {
+  border-color: #e81919;
+  box-shadow: 5px 5px 8px rgba(232, 25, 25, 0.4);
+}
+
+/* Button styles */
+.box button, .box1 button, .toggle-button {
+  padding: 10px 20px;
+  background-color: #f0a500;
+  border: none;
+  border-radius: 10px;
+  margin: 10px 5px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.box button:hover, .box1 button:hover, .toggle-button:hover {
+  color: #e81919;
+  background-color: coral;
+}
+
+/* Task completion styles */
+.hidden {
+  display: none;
+}
+
+/* BoxCard styles */
+.box-card {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.box-card.success {
+  background-color: green;
+}
+
+.box-card.warning {
+  background-color: orange;
+}
+
+.box-card.error {
+  background-color: red;
+}
+
+.box-card .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.box-card .description {
+  font-size: 14px;
+}
