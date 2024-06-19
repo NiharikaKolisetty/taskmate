@@ -2,6 +2,7 @@ import React from 'react';
 import Header from "./components/Header";
 import "./App.css";
 import TaskList from "./components/TaskList";
+import AddTask from './components/AddTask';
 
 // import Footer from "./components/Footer";
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
   return(
     <>
     <Header/>
+    <AddTask/>
     <TaskList title="Random" subTitle="Test"/>
     </>
   )

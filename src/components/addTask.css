@@ -1,0 +1,27 @@
+.addTask{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(204, 240, 240);
+}
+
+.addTask label{
+    display: flexbox;
+    color: rgb(89, 21, 237);
+    box-sizing: border-box;
+    border-style: block;
+}
+
+.addTask input{
+    border-radius: 5px;
+    border-color: aliceblue;
+    margin-left: 10px;
+    height: 30px;
+    width: 200px;
+    border-style: solid;
+}
+
+.addTask input:hover{
+    background-color: navy;
+    color: white;
+}
