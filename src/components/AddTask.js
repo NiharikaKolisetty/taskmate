@@ -1,13 +1,22 @@
+import { useState } from "react";
 import "./addTask.css";
 
 const AddTask = () => {
+
+  const[change,setChange] = useState("");
+
+  const handleChange = (e) =>{
+    setChange(e.target.value);
+  }
+
   return (
     <section className="addTask">
-        <form>
-        <label htmlFor="task">Task Name:</label>
-        <input type="text" id="task" name="task" placeholder="Enter Task name" autoComplete="off"></input>
+        <form >
+        <input onChange={(e)=>handleChange(e)} type="text" id="task" name="task" placeholder="Enter Task name" autoComplete="off"></input>
         <button type="submit">ADD TASK</button>
         </form>
+        <p>{change}</p>
+        <p>{change.length}</p>
     </section>
   )
 }
