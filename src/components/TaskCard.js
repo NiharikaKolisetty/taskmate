@@ -1,3 +1,5 @@
+import "./taskCard.css";
+
 const TaskCard = ({ task, handleDel }) => {
   return (
     <div>

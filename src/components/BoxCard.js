@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./boxCard.css";
 const BoxCard = ({ result, children }) => {
   const [show, setShow] = useState(true);
   return (
@@ -15,3 +15,5 @@ const BoxCard = ({ result, children }) => {
 }
 
 export default BoxCard;
+
+

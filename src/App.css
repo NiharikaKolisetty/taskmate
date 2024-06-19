@@ -10,18 +10,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: #f4f4f4;
 }
 
 /* Heading styles */
-h1 {
+.tasklist h1 {
   text-align: center;
   margin-top: 10px;
   color: #5a5a5a;
 }
 
-/* Box styles */
+Box styles
 .box {
   padding: 20px;
   margin: 20px;
@@ -70,7 +69,7 @@ h1 {
 }
 
 /* Button styles */
-.box button, .box1 button, .toggle-button {
+.box button, .box1 button {
   padding: 10px 20px;
   background-color: #f0a500;
   border: none;
@@ -81,7 +80,7 @@ h1 {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.box button:hover, .box1 button:hover, .toggle-button:hover {
+.box button:hover, .box1 button:hover {
   color: #e81919;
   background-color: coral;
 }
@@ -89,35 +88,4 @@ h1 {
 /* Task completion styles */
 .hidden {
   display: none;
-}
-
-/* BoxCard styles */
-.box-card {
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
-  color: white;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
-}
-
-.box-card.success {
-  background-color: green;
-}
-
-.box-card.warning {
-  background-color: orange;
-}
-
-.box-card.error {
-  background-color: red;
-}
-
-.box-card .title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.box-card .description {
-  font-size: 14px;
 }

@@ -1,0 +1,46 @@
+/* TaskCard component specific styles */
+
+li {
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #e06b6b;
+    border-radius: 10px;
+    background-color: #fff5e6;
+    color: #cf5357;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li.completed {
+    border-color: #026c1e;
+    box-shadow: 5px 5px 8px rgba(2, 108, 30, 0.4);
+  }
+  
+  li.incomplete {
+    border-color: #e81919;
+    box-shadow: 5px 5px 8px rgba(232, 25, 25, 0.4);
+  }
+  
+  li span {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  li button {
+    padding: 8px 12px;
+    background-color: #e06b6b;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  li button:hover {
+    background-color: #cf5357;
+  }
+  

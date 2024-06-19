@@ -1,0 +1,52 @@
+/* BoxCard component specific styles */
+
+.box-card {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box-card.success {
+    background-color: green;
+  }
+  
+  .box-card.warning {
+    background-color: orange;
+  }
+  
+  .box-card.error {
+    background-color: red;
+  }
+  
+  .box-card .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .box-card .description {
+    font-size: 14px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .toggle-button {
+    padding: 10px 20px;
+    background-color: #f0a500;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 5px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .toggle-button:hover {
+    color: #e81919;
+    background-color: coral;
+  }
+  

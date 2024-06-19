@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TaskCard from "./TaskCard";
 import BoxCard from "./BoxCard";
+import "./taskList.css";
 
 const TaskList = (props) => {
   const [tasks, setTasks] = useState([
@@ -17,7 +18,7 @@ const TaskList = (props) => {
   const [show, setShow] = useState(true);
 
   return (
-    <div>
+    <div className="tasklist">
       <h1>useState: Array State Value Example</h1>
       <div className="box1">
         <h2>Tasks List {props.title} {props.subTitle}</h2>
