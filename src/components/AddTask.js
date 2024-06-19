@@ -9,11 +9,16 @@ const AddTask = () => {
     setChange(e.target.value);
   }
 
+
+  const handleReset = () =>{
+    setChange("");
+  }
   return (
     <section className="addTask">
         <form >
-        <input onChange={(e)=>handleChange(e)} type="text" id="task" name="task" placeholder="Enter Task name" autoComplete="off"></input>
+        <input onChange={(e)=>handleChange(e)} type="text" id="task" name="task" placeholder="Enter Task name" autoComplete="off" value={change}></input>
         <button type="submit">ADD TASK</button>
+        <span className="reset" onClick={handleReset}>Reset</span>
         </form>
         <p>{change}</p>
         <p>{change.length}</p>
