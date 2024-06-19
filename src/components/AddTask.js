@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./addTask.css";
 
-const AddTask = () => {
+const AddTask = ({tasks,setTasks}) => {
 
   const[change,setChange] = useState("");
 
@@ -24,7 +24,7 @@ const AddTask = () => {
       Name: change,
       completed: Boolean(progress)
     }
-    console.log(task);
+    setTasks([...tasks,task]);
     handleReset();
    
   }

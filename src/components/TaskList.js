@@ -3,13 +3,8 @@ import TaskCard from "./TaskCard";
 import BoxCard from "./BoxCard";
 import "./taskList.css";
 
-const TaskList = (props) => {
-  const [tasks, setTasks] = useState([
-    { id: 1, Name: "Mahi", completed: true },
-    { id: 2, Name: "Virat", completed: false },
-    { id: 3, Name: "Rohit", completed: true },
-    { id: 4, Name: "Hardik", completed: false },
-  ]);
+const TaskList = ({tasks,setTasks}) => {
+ 
 
   function handleDel(id) {
     setTasks(tasks.filter((task) => id !== task.id));
@@ -21,7 +16,7 @@ const TaskList = (props) => {
     <div className="tasklist">
       <h1>useState: Array State Value Example</h1>
       <div className="box1">
-        <h2>Tasks List {props.title} {props.subTitle}</h2>
+        <h2>Tasks List</h2>
         <button onClick={() => setShow(!show)}>{show ? "HIDE" : "SHOW"}</button>
         <ul>
           {show && tasks.map((task) => (

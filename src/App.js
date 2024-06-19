@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import "./App.css";
 import TaskList from "./components/TaskList";
 import AddTask from './components/AddTask';
-
+import { useState } from 'react';
 // import Footer from "./components/Footer";
 const App = () => {
   // const[count, setCount] = useState(0);
@@ -36,12 +36,14 @@ const App = () => {
   //     {/* <Footer/> */}
     // </div>
   // )
-
+  const [tasks, setTasks] = useState([]);
   return(
     <>
     <Header/>
-    <AddTask/>
-    <TaskList title="Random" subTitle="Test"/>
+    <main>
+    <AddTask tasks={tasks} setTasks={setTasks}/>
+    <TaskList tasks={tasks} setTasks={setTasks}/>
+    </main>
     </>
   )
 }
